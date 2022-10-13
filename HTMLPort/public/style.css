@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=IBM+Plex+Sans+Thai:wght@500&display=swap');
+/* ------------------------------------------index------------------------------------------------------------- */
+html{
+    scroll-behavior: smooth;
+}
+
+#preloader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    transition: all .4s ease;
+}
+
+.progress{
+    max-width: 400px;
+    background-color: rgb(240, 107, 151);
+    color: rgb(240, 107, 151);
+}
+.progress-bar{
+    background-color: rgb(240, 107, 151);
+    color: rgb(240, 107, 151);
+    animation: progress-bar 1s linear forwards;
+}
+@keyframes progress-bar{
+    100%{
+        width: 100%;
+    }
+}
+/* animate to page content */
+.animate-bottom{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@keyframes animate-bottom{
+    from{ bottom:-100%; opacity:0 } 
+    to{ bottom:0%; opacity:1 }
+}
+
+#Homenavbar{
+    display: none;
+    text-align: center;
+}
+#content{
+    display: none;
+    text-align: center;
+}
+.navbar{
+    min-width: 390px;
+    background-color: rgb(240, 107, 151);
+}
+/* content welcome */
+#border-welcome{
+    min-width: 390px;
+    border:solid;
+    border-radius: 80px;
+    border-color: white;
+    border-width: 5px;
+}
+.p_content{
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+    border-color: white;
+    letter-spacing: 2px;
+    line-height: 70px;
+    text-indent: 0px;
+    margin-top: 20px;
+    width: 625px;
+    text-shadow: 2px 3px 3px black;
+}
+.introduce{
+    text-indent: 1cm;
+    max-width: 750px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8em;
+}
+.footer{
+    background-color: rgb(240, 107, 151);
+}
+.brand{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.social ul{
+    display: flex;
+}
+.social-item{
+    list-style: none;
+}
+/* -------------------------------------------about me---------------------------------------------------- */
+.img_avatar{
+    border-radius: 50%;
+}
+#border-aboutme{
+    margin-top: 18px;
+    max-width: 1024px;
+    min-width: 390px;
+    border:solid;
+    border-radius: 80px;
+    border-color: white;
+    border-width: 5px;
+    background-color: white;
+}
+.aboutme{
+    text-align: center;
+    text-indent: 2cm;
+    max-width: 750px;
+    margin-top: 1vh;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8em;
+}
+.aboutme span{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+
